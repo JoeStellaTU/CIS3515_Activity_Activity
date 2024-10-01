@@ -12,7 +12,7 @@ class DisplayActivity : AppCompatActivity() {
         // Extract transferred value and use for lyricsDisplayView text size
         with(findViewById<TextView>(R.id.lyricsDisplayTextView)) {
             var textSize = intent.getIntExtra("TEXT_SIZE", 20) // Default size is 20 if not found
-            textSize.also { textSize = it }
+            textSize.also { textSize = it } //
         }
     }
 }
